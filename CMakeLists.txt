@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.5)
 
 set(gui qt)
 set(Gui Qt)
@@ -6,7 +6,7 @@ set(GUI QT)
 set(WIDGET QWidget*)
 set(EVENT QEvent*)
 set(COMPONENTHEADER Q_OBJECT)
-
+set(CMAKE_CXX_STANDARD 17 )
 function(dump_variable)
   if (SO${GUI}_VERBOSE)
     foreach(f ${ARGN})
